@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1514423864 source:c:\users\legen\documents\code blocks\game_engine\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	"Loader.h"
+	"SimpleModel.h"
+
+1514406066 c:\opengl\dependencies\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1279577278 c:\opengl\dependencies\gl\gl.h
+
+1279577278 c:\opengl\dependencies\gl\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1514418062 source:c:\users\legen\documents\code blocks\game_engine\headers\loader.cpp
+	"Loader.h"
+
+1514418005 c:\users\legen\documents\code blocks\game_engine\headers\loader.h
+	"SimpleModel.h"
+	<vector>
+
+1514417887 c:\users\legen\documents\code blocks\game_engine\headers\simplemodel.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1469375978 c:\opengl\dependencies\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1514417374 source:c:\users\legen\documents\code blocks\game_engine\headers\simplemodel.cpp
+	"SimpleModel.h"
+
+1514418062 source:c:\users\legen\documents\code blocks\game_engine\helpful_classes\loader.cpp
+	"Loader.h"
+
+1514418005 c:\users\legen\documents\code blocks\game_engine\helpful_classes\loader.h
+	"SimpleModel.h"
+	<vector>
+
+1514420194 c:\users\legen\documents\code blocks\game_engine\helpful_classes\simplemodel.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1514417374 source:c:\users\legen\documents\code blocks\game_engine\helpful_classes\simplemodel.cpp
+	"SimpleModel.h"
+
+1517291007 source:c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\loader.cpp
+	"Loader.h"
+	<iostream>
+
+1517288273 c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\loader.h
+	"SimpleModel.h"
+	"TexturedModel.h"
+	"Soil/SOIL.h"
+	<vector>
+	<string>
+
+1517284555 c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\simplemodel.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1517286282 source:c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\simplemodel.cpp
+	"SimpleModel.h"
+
+1517291461 source:c:\users\legen\documents\github\interactive-3d-graphics\game_engine\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	"Loader.h"
+	"SimpleModel.h"
+	"TexturedModel.h"
+	"Shader.h"
+
+1514527645 source:c:\users\legen\documents\github\interactive-3d-graphics\game_engine\shader_classes\shader.cpp
+	"Shader.h"
+
+1514524618 c:\users\legen\documents\github\interactive-3d-graphics\game_engine\shader_classes\shader.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<string>
+	<fstream>
+	<iostream>
+
+1517291419 c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\texturedmodel.h
+	<SimpleModel.h>
+
+1215472408 c:\opengl\dependencies\soil\soil.h
+
+1517291416 source:c:\users\legen\documents\github\interactive-3d-graphics\game_engine\helpful_classes\texturedmodel.cpp
+	"TexturedModel.h"
+
+1517286282 source:c:\users\legen\documents\github\game_engine\helpful_classes\simplemodel.cpp
+	"SimpleModel.h"
+
+1517284555 c:\users\legen\documents\github\game_engine\helpful_classes\simplemodel.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1517291416 source:c:\users\legen\documents\github\game_engine\helpful_classes\texturedmodel.cpp
+	"TexturedModel.h"
+
+1517291419 c:\users\legen\documents\github\game_engine\helpful_classes\texturedmodel.h
+	<SimpleModel.h>
+
+1517291461 source:c:\users\legen\documents\github\game_engine\main.cpp
+	<iostream>
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	"Loader.h"
+	"SimpleModel.h"
+	"TexturedModel.h"
+	"Shader.h"
+
+1517288273 c:\users\legen\documents\github\game_engine\helpful_classes\loader.h
+	"SimpleModel.h"
+	"TexturedModel.h"
+	"Soil/SOIL.h"
+	<vector>
+	<string>
+
+1514524618 c:\users\legen\documents\github\game_engine\shader_classes\shader.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<string>
+	<fstream>
+	<iostream>
+
+1514527645 source:c:\users\legen\documents\github\game_engine\shader_classes\shader.cpp
+	"Shader.h"
+
+1517291549 source:c:\users\legen\documents\github\game_engine\helpful_classes\loader.cpp
+	"Loader.h"
+	<iostream>
+
