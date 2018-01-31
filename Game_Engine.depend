@@ -134,16 +134,17 @@
 1517291419 c:\users\legen\documents\github\game_engine\helpful_classes\texturedmodel.h
 	<SimpleModel.h>
 
-1517291461 source:c:\users\legen\documents\github\game_engine\main.cpp
+1517377187 source:c:\users\legen\documents\github\game_engine\main.cpp
 	<iostream>
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	"Loader.h"
 	"SimpleModel.h"
 	"TexturedModel.h"
+	"Renderer.h"
 	"Shader.h"
 
-1517288273 c:\users\legen\documents\github\game_engine\helpful_classes\loader.h
+1517374258 c:\users\legen\documents\github\game_engine\helpful_classes\loader.h
 	"SimpleModel.h"
 	"TexturedModel.h"
 	"Soil/SOIL.h"
@@ -160,7 +161,14 @@
 1514527645 source:c:\users\legen\documents\github\game_engine\shader_classes\shader.cpp
 	"Shader.h"
 
-1517291549 source:c:\users\legen\documents\github\game_engine\helpful_classes\loader.cpp
+1517375463 source:c:\users\legen\documents\github\game_engine\helpful_classes\loader.cpp
 	"Loader.h"
 	<iostream>
+
+1517376989 source:c:\users\legen\documents\github\game_engine\helpful_classes\renderer.cpp
+	"Renderer.h"
+
+1517376940 c:\users\legen\documents\github\game_engine\helpful_classes\renderer.h
+	"SimpleModel.h"
+	"TexturedModel.h"
 

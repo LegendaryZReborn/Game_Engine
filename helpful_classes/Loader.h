@@ -15,7 +15,7 @@ class Loader{
 
         SimpleModel loadToVao(vector<float> vertices);
         TexturedModel loadToVao(vector<float> vertices, vector<float> textures, GLuint texID);
-        GLuint loadTexture(string filename, int unit);
+        GLuint loadTexture(string filename, GLuint unit);
         void cleanUp();
 
     protected:

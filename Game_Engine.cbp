@@ -57,6 +57,8 @@
 		</Linker>
 		<Unit filename="helpful_classes/Loader.cpp" />
 		<Unit filename="helpful_classes/Loader.h" />
+		<Unit filename="helpful_classes/Renderer.cpp" />
+		<Unit filename="helpful_classes/Renderer.h" />
 		<Unit filename="helpful_classes/SimpleModel.cpp" />
 		<Unit filename="helpful_classes/SimpleModel.h" />
 		<Unit filename="helpful_classes/TexturedModel.cpp" />

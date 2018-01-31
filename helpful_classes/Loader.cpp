@@ -16,7 +16,7 @@ SimpleModel Loader::loadToVao(vector<float> vertices){
 TexturedModel Loader::loadToVao(vector<float> vertices, vector<float> textures, GLuint texID){
     GLuint vaoID = createVao();
     storeDataInVao(0, 3, vertices);
-    storeDataInVao(2, 2, textures);
+    storeDataInVao(1, 2, textures);
     glBindVertexArray(0);
 
     TexturedModel model(vaoID, texID, vertices.size()/3);
@@ -46,7 +46,7 @@ void Loader::storeDataInVao(GLuint attributeNum, int size, vector<float> data){
     vbos.push_back(vboID);
 }
 
-GLuint Loader::loadTexture(string filename, int unit){
+GLuint Loader::loadTexture(string filename, GLuint unit){
     string full_path = "textures\\" + filename + ".jpg";
 
     cout << full_path << endl;
@@ -60,10 +60,15 @@ GLuint Loader::loadTexture(string filename, int unit){
         glGenTextures(1, &tex);
         glBindTexture(GL_TEXTURE_2D, tex);
 
-        //Apply settings
-
         //Load the texture image to the active texture unit
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+
+          //Apply settings
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
         SOIL_free_image_data(image);
         textures.push_back(tex);
     }

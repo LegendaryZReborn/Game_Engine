@@ -4,6 +4,7 @@
 #include "Loader.h"
 #include "SimpleModel.h"
 #include "TexturedModel.h"
+#include "Renderer.h"
 #include "Shader.h"
 
 using namespace std;
@@ -70,31 +71,23 @@ int main(void){
     GLuint sqTex = loader.loadTexture("goku", 0);
 
     TexturedModel rect = loader.loadToVao(rectVerts, textureUVs, sqTex);
+    SimpleModel rect2 = loader.loadToVao(rectVerts);
+
     Shader shader("shaders/v_shader.glsl", "shaders/f_shader.glsl");
+    Renderer renderer;
 
     /*Loop while the window hasn't been close*/
     while(!glfwWindowShouldClose(window)){
-        /*Clear the buffer*/
-        glClearColor(1.0, 0.0, 0.0, 1.0);
-        glClear(GL_COLOR_BUFFER_BIT);
-
+        renderer.prepare();
         shader.startShader();
-         glUniform1f(1, (GLfloat)glfwGetTime());
-        /*Render*/
-        glBindVertexArray(rect.GetvaoID());
-        glEnableVertexAttribArray(0);
-        glEnableVertexAttribArray(2);
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, rect.getTex());
-        glDrawArrays(GL_TRIANGLES, 0, rect.GetnumVertices());
-        glDisableVertexAttribArray(0);
-        glEnableVertexAttribArray(2);
-        glBindVertexArray(0);
+        //Send uniform data to shader
+        glUniform1f(1, (GLfloat)glfwGetTime());
+        glUniform1i(2, 1);
+        renderer.render(rect);
         shader.stopShader();
 
         /*Swap front and back buffers after rendering to back for seamless image*/
         glfwSwapBuffers(window);
-
         /*Poll for and process events */
         glfwPollEvents();
     }
